@@ -1,9 +1,9 @@
 let homeCount = document.getElementById("home-count")
-let guestCount = document.getElementById("guest-count")
+let awayCount = document.getElementById("away-count")
 let homeScore = 0
-let guestScore = 0
+let awayScore = 0
 homeCount.textContent = homeScore
-guestCount.textContent = guestScore
+awayCount.textContent = awayScore
 
 function homeOne() {
   homeScore += 1
@@ -17,21 +17,21 @@ function homeThree() {
   homeScore += 3
   homeCount.textContent = homeScore
 }
-function guestOne() {
-  guestScore += 1
-  guestCount.textContent = guestScore
+function awayOne() {
+  awayScore += 1
+  awayCount.textContent = awayScore
 }
-function guestTwo() {
-  guestScore += 2
-  guestCount.textContent = guestScore
+function awayTwo() {
+  awayScore += 2
+  awayCount.textContent = awayScore
 }
-function guestThree() {
-  guestScore += 3
-  guestCount.textContent = guestScore
+function awayThree() {
+  awayScore += 3
+  awayCount.textContent = awayScore
 }
 function newGame() {
   homeScore = 0
-  guestScore = 0
+  awayScore = 0
   homeCount.textContent = homeScore
-  guestCount.textContent = guestScore
+  awayCount.textContent = awayScore
 }
